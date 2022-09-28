@@ -1,10 +1,9 @@
-html {
+main {
+    padding: 3rem;
+    font-size: 16px;
+    min-height: 80vh;
     background: url(img/bg.jpg);
     background-size: cover;
-}
-
-body {
-    font-size: 16px;
 }
 
 h1 {
@@ -41,4 +40,17 @@ h1 {
     color: white;
     font-size: 1.5rem;
     margin: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    display: block;
+    margin-top: auto;
+    font-size: 3rem;
+}
+
+footer img {
+    width: 50px;
+    margin: 0 6rem;
 }
