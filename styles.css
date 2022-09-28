@@ -1,3 +1,4 @@
+
 main {
     padding: 3rem;
     font-size: 16px;
@@ -9,7 +10,7 @@ main {
 h1 {
     text-align: center;
     color: white;
-    font-size: 4rem;
+    font-size: 4vh;
 }
 
 #searchForm {
@@ -17,41 +18,87 @@ h1 {
 }
 
 #searchForm input, button {
-    font-size: 2.5rem;
+    font-size: 2vw;
+    padding: 0.5em 1em;
     margin: 1rem;
-}
-
-.items {
-    margin: 1em;
     border: 1px solid white;
     border-radius: 10px;
 }
 
 #imgs {
-    margin: 0 auto;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .divItems {
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 1.5rem;
-    margin: 1rem;
-    max-width: 260px;
+    margin: 0.5em;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    max-width: 80px;
 }
 
-footer {
+.divItems img {
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+.divItems span {
+    color: white;
+}
+
+footer div {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-content: center;
     padding: 2rem;
-    display: block;
     margin-top: auto;
     font-size: 3rem;
 }
 
 footer img {
-    width: 50px;
+    width: 40px;
     margin: 0 6rem;
+}
+
+
+
+@media screen and (min-width: 680px) {
+    .divItems {
+        max-width: 200px;
+        margin: 2em;
+    }
+
+    .divItems img {
+        width: 200px;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (min-width: 680px) and (orientation: landscape) {
+    .divItems {
+        max-width: 150px;
+        margin: 2em;
+    }
+    .divItems img {
+        width: 150px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .divItems {
+        max-width: 250px;
+        margin: 1em;
+        font-size: 2vh;
+    }
+    .divItems img {
+        width: 250px;
+
+    }
 }
