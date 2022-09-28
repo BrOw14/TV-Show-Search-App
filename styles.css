@@ -1,0 +1,44 @@
+html {
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+#searchForm {
+    text-align: center;
+}
+
+#searchForm input, button {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.items {
+    margin: 1em;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#imgs {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divItems {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
